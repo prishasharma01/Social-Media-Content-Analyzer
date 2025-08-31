@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Home.css"; // custom styles
+import "./home.css"; // custom styles
 
 export default function Home() {
   return (
