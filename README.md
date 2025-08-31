@@ -26,10 +26,10 @@ By combining OCR, PDF parsing, sentiment detection, and contextual recommendatio
 
 ### 🛠️ Tech Stack
 
-* **Frontend:** React, Tailwind CSS
+* **Frontend:** React, CSS
 * **Authentication:** Clerk
 * **OCR:** Tesseract.js
 * **File Parsing:** PDF.js / custom parsing utilities
-* **Analysis:** Natural Language Processing (sentiment + suggestions)
+* **Analysis:**(sentiment + suggestions)
 * **Other Tools:** Vite, Node.js environment
 
