@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
-import "./Navbar.css";
+import "./navbar.css";
 
 export default function Navbar() {
   return (
