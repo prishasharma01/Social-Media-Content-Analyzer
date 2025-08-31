@@ -2,10 +2,10 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { SignedIn, SignedOut, SignUp } from "@clerk/clerk-react";
 import Analyzer from "./Analyzer";   // Analyzer page
-import Home from "./Home";           // Homepage
-import Login from "./Login";         // Login page
-import Navbar from "./Navbar";       // Navbar
-import FileUploader from "./FileUploader"; // FileUploader component
+import Home from "./home";           // Homepage
+import Login from "./login";         // Login page
+import Navbar from "./navbar";       // Navbar
+import FileUploader from "./fileuploader"; // FileUploader component
 
 function App() {
   return (
