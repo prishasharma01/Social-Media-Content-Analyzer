@@ -1,12 +1,35 @@
-# React + Vite
+## Social Media Content Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Social Media Content Analyzer** is a React-based web application designed to help users evaluate and enhance their content before publishing on social platforms. It integrates multiple technologies to provide intelligent insights and actionable suggestions.
 
-Currently, two official plugins are available:
+Built with **React**, the project delivers a modern, responsive interface, while **Clerk** handles secure authentication and user management. Users can upload content seamlessly using the **drag-and-drop feature** or traditional file upload, making the experience quick and intuitive.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application supports multiple file types. For **image files**, it leverages **Tesseract.js (OCR)** to extract embedded text. For **PDF documents**, it parses and retrieves textual content automatically. This flexibility ensures that users can analyze diverse content formats without additional effort.
 
-## Expanding the ESLint configuration
+Once the text is extracted, the system performs **sentiment analysis** to identify the overall tone (positive, negative, or neutral). It also provides **personalized suggestions** to improve readability, engagement, and effectiveness of the content, aligned with social media best practices.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+By combining OCR, PDF parsing, sentiment detection, and contextual recommendations, this tool empowers users to create impactful posts that resonate with audiences and strengthen their online presence.
+
+---
+
+### 🚀 Features
+
+* 🔑 Secure user authentication with **Clerk**
+* 📂 **Drag-and-drop file upload** for convenience
+* 🖼️ **OCR with Tesseract.js** to extract text from images
+* 📑 **PDF parsing** to read and analyze documents
+* 😊 **Sentiment analysis** (positive / negative / neutral tone)
+* 💡 **Content improvement suggestions** for better engagement
+* 📊 Clear and actionable analysis reports
+
+---
+
+### 🛠️ Tech Stack
+
+* **Frontend:** React, Tailwind CSS
+* **Authentication:** Clerk
+* **OCR:** Tesseract.js
+* **File Parsing:** PDF.js / custom parsing utilities
+* **Analysis:** Natural Language Processing (sentiment + suggestions)
+* **Other Tools:** Vite, Node.js environment
+
