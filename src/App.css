@@ -1,0 +1,247 @@
+/* Global Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f8f9fc;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #ff4081;
+  font-weight: bold;
+}
+/* Upload Button */
+/* Wrapper for upload button */
+.upload-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Upload Button */
+.upload-btn {
+  background-color: #f8c8dc; 
+  color: #333;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.upload-btn:hover {
+  background-color: #f4a6c1; 
+  transform: scale(1.05);
+}
+
+.upload-btn:active {
+  background-color: #e58bb0; /* pressed state */
+  transform: scale(0.98);
+}
+
+
+
+/* File Upload Dropzone */
+.dropzone {
+  border: 2px dashed #888;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+.dropzone:hover,
+.dropzone.active {
+  border-color: #ff4081;
+  background: #fff5f8;
+}
+
+/* Uploaded File */
+.uploaded-file {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Loading Section */
+.loading-section {
+  text-align: center;
+  margin-top: 20px;
+}
+.spinner {
+  border: 5px solid #eee;
+  border-top: 5px solid #d63384c6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Results Layout */
+.results-container {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap; /*  prevents overlap when screen is smaller */
+}
+
+/* Left Section - Extracted Text */
+.left-section {
+  flex: 1;
+  min-width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.text-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: 500px;
+  overflow-y: auto;
+  font-family: "Courier New", Courier, monospace; 
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap; /* preserves line breaks */
+  word-wrap: break-word;
+  border-left: 4px solid #ff4081; 
+}
+.text-box pre {
+  margin: 0;
+  font-family: inherit;
+  white-space: pre-wrap;
+}
+
+/* Right Section - Analysis */
+.right-section {
+  flex: 1;
+  min-width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Analysis Grid */
+.analysis-grid {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s ease;
+  height: auto;
+  min-height: 120px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Sentiment + Suggestions Row */
+.sentiment-suggestions {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* equal halves */
+  gap: 20px;
+}
+
+.sentiment-card,
+.suggestions-card {
+   min-height: 220px; /* adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sentiment-card:hover,
+.suggestions-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Progress Bar */
+.progress-bar {
+  background: #eee;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #ffeb3b, #f44336);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+/* Suggestions List */
+.suggestions-card ul {
+  padding-left: 20px;
+  margin: 0;
+}
+.suggestions-card li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+  font-size: 0.95rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .sentiment-suggestions {
+    grid-template-columns: 1fr; /* stack vertically */
+  }
+}
+
+/* Scrollbars */
+.text-box::-webkit-scrollbar,
+.right-section::-webkit-scrollbar {
+  width: 8px;
+}
+.text-box::-webkit-scrollbar-thumb,
+.right-section::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 5px;
+}
+.text-box::-webkit-scrollbar-thumb:hover,
+.right-section::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+.full-width {
+  width: 100%;
+  margin-bottom: 20px;
+}

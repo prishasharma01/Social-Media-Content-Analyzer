@@ -1,0 +1,79 @@
+/* Transparent Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: transparent;
+  border: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page-content {
+  padding-top: 80px; 
+}
+
+
+
+body {
+  margin: 0; 
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.main-content {
+  padding-top: 80px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.navbar-left .brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d63384; 
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 0;
+}
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+}
+
+
+.nav-button {
+  background: #ff9800; 
+  color: white;
+  padding: 8px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+  background: #e68900; 
+  transform: translateY(-2px);
+}
+
+/* Reset default page margins */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
